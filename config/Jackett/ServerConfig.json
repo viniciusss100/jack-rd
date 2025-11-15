@@ -1,0 +1,7 @@
+{
+  "ApiKey": "bcynwrlc0gh0zrqa7wu82sin4y5vja8p",
+  "Port": 9117,
+  "AllowExternal": true,
+  "BlackholeDir": "/downloads",
+  "BaseUrlOverride": ""
+}
