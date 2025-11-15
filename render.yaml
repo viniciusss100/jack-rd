@@ -11,6 +11,6 @@ services:
       - key: PGID
         value: 1000
       - key: TZ
-        value: America/Toronto
+        value: America/Recife
     ports:
       - port: 9117
