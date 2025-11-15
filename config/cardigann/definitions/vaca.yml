@@ -1,0 +1,61 @@
+# --- Início do arquivo bludv_indexer.yml ---
+id: vaca_torrent_indexer
+name: vaca_torrent_indexer
+description: "vaca_torrent - Custom indexer on from torrent-indexer"
+language: pt-BR
+type: public
+encoding: UTF-8
+links:
+  - https://torrent-indexer.darklyn.org/
+caps:
+  categorymappings:
+    - { id: Movie, cat: Movies, desc: "Movies" }
+    - { id: TV, cat: TV, desc: "TV" }
+  modes:
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+  allowrawsearch: true
+settings: []
+search:
+  paths:
+    - path: "indexers/vaca_torrent?filter_results=true&q={{ .Keywords }}"
+      response:
+        type: json
+  keywordsfilters:
+    - name: tolower
+  rows:
+    selector: $.results
+    count:
+      selector: $.count
+  fields:
+    _id:
+      selector: title
+    download:
+      selector: magnet_link
+    title:
+      selector: title
+    description:
+      selector: original_title
+    details:
+      selector: details
+    infohash:
+      selector: info_hash
+    date:
+      selector: date
+    size:
+      selector: size
+    seeders:
+      selector: seed_count
+    leechers:
+      selector: leech_count
+    imdb:
+      selector: imdb
+    category_is_tv_show:
+      selector: title
+      filters:
+        - name: regexp
+          args: "\\b(S\\d+(?:E\\d+)?)\\b"
+    category:
+      text: "{{ if .Result.category_is_tv_show }}TV{{ else }}Movie{{ end }}"
+# --- Fim do arquivo ---
