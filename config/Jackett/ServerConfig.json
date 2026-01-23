@@ -4,5 +4,5 @@
   "AllowExternal": true,
   "BlackholeDir": "/downloads",
   "BaseUrlOverride": "",
-  "AdminPassword": "5a1e4df15aee2ef273412e7de5f96139d76b738aa366b64f6acfee60a279a775a8b8df7243b70cfa0146fbec9678ca598d05f8e1f148379b7d56af2dda7e7e94"
+  "AdminPassword": ""
 }
