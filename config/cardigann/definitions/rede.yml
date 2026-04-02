@@ -1,12 +1,13 @@
 # --- Início do arquivo bludv_indexer.yml ---
-id: vaca_torrent_indexer
-name: vaca_torrent_indexer
-description: "vaca_torrent - Custom indexer on from torrent-indexer"
+id: rede_torrent
+name: rede_torrent_ti
+description: "rede_torrent - Custom indexer on from torrent-indexer"
 language: pt-BR
 type: public
 encoding: UTF-8
 links:
   - https://torrent-indexer.darklyn.org/
+  - https://ti-6jxh.onrender.com/
 caps:
   categorymappings:
     - { id: Movie, cat: Movies, desc: "Movies" }
@@ -19,7 +20,7 @@ caps:
 settings: []
 search:
   paths:
-    - path: "indexers/vaca_torrent?filter_results=true&q={{ .Keywords }}"
+    - path: "indexers/rede_torrent?filter_results=true&q={{ .Keywords }}"
       response:
         type: json
   keywordsfilters:
