@@ -1,5 +1,5 @@
 # --- Início do arquivo bludv_indexer.yml ---
-id: starck-filmes_indexer
+id: starck-filmes
 name: starck-filmes_indexer
 description: "starck-filmes - Custom indexer on from torrent-indexer"
 language: pt-BR
@@ -7,6 +7,7 @@ type: public
 encoding: UTF-8
 links:
   - https://torrent-indexer.darklyn.org/
+  - https://ti-6jxh.onrender.com/
 caps:
   categorymappings:
     - { id: Movie, cat: Movies, desc: "Movies" }
