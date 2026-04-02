@@ -1,12 +1,13 @@
 # --- Início do arquivo bludv_indexer.yml ---
-id: tdosfilmes_torrent_indexer
+id: tdosfilmes
 name: tdosfilmes_torrent_indexer
-description: "vaca_torrent - Custom indexer on from torrent-indexer"
+description: "torrent dos filmes - Custom indexer on from torrent-indexer"
 language: pt-BR
 type: public
 encoding: UTF-8
 links:
   - https://torrent-indexer.darklyn.org/
+  - https://ti-6jxh.onrender.com/
 caps:
   categorymappings:
     - { id: Movie, cat: Movies, desc: "Movies" }
